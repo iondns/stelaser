@@ -9,11 +9,11 @@ find . -type f -print0 | xargs -0 sed -i 's/CPUminerscoin/stelasercoin/g'
 find . -type f -print0 | xargs -0 sed -i 's/CPUMINERSCOIN/stelasercoin/g'
 find . -type f -print0 | xargs -0 sed -i 's/CMC/STELASER/g'
 
-find . -type f -print0 | xargs -0 sed -i 's/cpuchain/stelasercoin/g'
-find . -type f -print0 | xargs -0 sed -i 's/Cpuchain/stelasercoin/g'
-find . -type f -print0 | xargs -0 sed -i 's/CPUchain/stelasercoin/g'
-find . -type f -print0 | xargs -0 sed -i 's/CPUChain/stelasercoin/g'
-find . -type f -print0 | xargs -0 sed -i 's/CPUCHAIN/stelasercoin/g'
+find . -type f -print0 | xargs -0 sed -i 's/cpuchain/stelaser/g'
+find . -type f -print0 | xargs -0 sed -i 's/Cpuchain/stelaser/g'
+find . -type f -print0 | xargs -0 sed -i 's/CPUchain/stelaser/g'
+find . -type f -print0 | xargs -0 sed -i 's/CPUChain/stelaser/g'
+find . -type f -print0 | xargs -0 sed -i 's/CPUCHAIN/stelaser/g'
 find . -type f -print0 | xargs -0 sed -i 's/CPU/STELASER/g'
 
 
