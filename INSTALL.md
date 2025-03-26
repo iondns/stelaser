@@ -50,6 +50,28 @@ rpcbind=127.0.0.1
 maxconnections=48
 rpcallowip=127.0.0.1
 banscore=10000
+_________________________________________
 
+
+sudo add-apt-repository universe
+sudo apt-get update
+sudo apt-get install git
+sudo apt-get install build-essential
+sudo apt-get install libtool autotools-dev autoconf
+sudo apt-get install libssl-dev
+sudo apt-get install libboost-all-dev
+sudo apt-get install pkg-config
+sudo apt-get install libevent-dev
+sudo apt-get install libzmq3-dev
+sudo add-apt-repository ppa:bitcoin/bitcoin
+sudo apt-get update
+sudo apt-get install libdb4.8-dev
+sudo apt-get install libdb4.8++-dev
+
+git clone https://github.com/yentencoin/yenten.git
+cd yenten
+./autogen.sh
+./configure --enable-upnp-default --without-gui
+make -j 4
 
 
