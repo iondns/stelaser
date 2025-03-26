@@ -51,7 +51,7 @@ maxconnections=48
 rpcallowip=127.0.0.1
 banscore=10000
 _________________________________________
-
+16.4 18.4
 
 sudo add-apt-repository universe
 sudo apt-get update
@@ -68,8 +68,8 @@ sudo apt-get update
 sudo apt-get install libdb4.8-dev
 sudo apt-get install libdb4.8++-dev
 
-git clone https://github.com/yentencoin/yenten.git
-cd yenten
+git clone https://github.com/stelaser/stelaser.git
+cd stelaser
 ./autogen.sh
 ./configure --enable-upnp-default --without-gui
 make -j 4
