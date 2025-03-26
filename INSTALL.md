@@ -73,5 +73,18 @@ cd stelaser
 ./autogen.sh
 ./configure --enable-upnp-default --without-gui
 make -j 4
+------------------------------------------------------------
+
+for port in \
+  "19707 12707" "19708 12708" \
+  "29707 22707" "29708 22708" \
+  "39707 32707" "39708 32708" \
+  "49707 42707" "49708 42708"
+do
+  from=$(echo $port | cut -d' ' -f1)
+  to=$(echo $port | cut -d' ' -f2)
+  echo "Replacing $from ➜ $to ..."
+  find . -type f \( -name "*.cpp" -o -name "*.h" -o -name "*.conf" -o -name "*.in" \) -print0 | xargs -0 sed -i "s/$from/$to/g"
+done
 
 
